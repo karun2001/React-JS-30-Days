@@ -1,0 +1,44 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-color: white;
+}
+#keyboard{
+  width: 989px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgb(12, 109, 88);
+  padding: 100px  20px 10px 20px;
+  position: relative;
+}
+#logo{
+  width: 200px;
+  height: 50px;
+  object-fit: cover;
+  position: absolute;
+  top: 23px
+}
+#keys{
+  display: flex;
+  width: 949px;
+  background-color: black;
+  padding-left: 2px;
+}
+.key{
+  width: 41px;
+  height: 175px;
+  margin: 2px;
+  background-color: white;
+  position: relative;
+  border-radius: 2px;
+}
+.black::after{
+  content: '';
+  width: 32px;
+  height: 100px; 
+  position: absolute;
+  left:-18px;
+  background-color: black;
+}
