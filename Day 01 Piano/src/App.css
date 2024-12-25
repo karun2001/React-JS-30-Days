@@ -1,17 +1,22 @@
-*, ::before, ::after{
+html {
   box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 body{
   min-height: 100vh;
   background-color: white;
 }
 #keyboard{
-  width: 989px;
-  height: 300px;
+  width: 992px;
+  height: 290px;
   border-radius: 10px;
   background-color: rgb(12, 109, 88);
   padding: 100px  20px 10px 20px;
   position: relative;
+  
 }
 #logo{
   width: 200px;
@@ -21,10 +26,11 @@ body{
   top: 23px
 }
 #keys{
-  display: flex;
   width: 949px;
+  height: 180px;
   background-color: black;
   padding-left: 2px;
+  overflow: hidden;
 }
 .key{
   width: 41px;
@@ -32,8 +38,9 @@ body{
   margin: 2px;
   background-color: white;
   position: relative;
-  border-radius: 2px;
-}
+  border-radius:0 0 2px 2px;
+  float: left;
+} 
 .black::after{
   content: '';
   width: 32px;
@@ -41,4 +48,14 @@ body{
   position: absolute;
   left:-18px;
   background-color: black;
+}
+@media (max-width: 768px) {
+  #keyboard{ width:358px; }
+  #keys{ width: 318px;}
+  #logo{width: 150px;}
+}
+span{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
 }
