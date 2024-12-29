@@ -10,7 +10,7 @@ body{
   background-color: white;
 }
 #keyboard{
-  width: 992px;
+  max-width: 358px;
   height: 290px;
   border-radius: 10px;
   background-color: rgb(12, 109, 88);
@@ -19,14 +19,14 @@ body{
   
 }
 #logo{
-  width: 200px;
+  width: 150px;
   height: 50px;
   object-fit: cover;
   position: absolute;
   top: 23px
 }
 #keys{
-  width: 949px;
+  max-width: 318px;
   height: 180px;
   background-color: black;
   padding-left: 2px;
@@ -58,4 +58,5 @@ span{
   position: absolute;
   bottom: 10px;
   left: 15px;
+  color: black;
 }
